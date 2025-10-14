@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Minercraftory';
+  src: url('fontes/Minercraftory.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'minecraftia';
+  src: url('fontes/Minecraftia-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #000000 45%, #C0301E 55%);
+  height: auto;
+  padding: 0 clamp(20px, 4vw, 40px);
+  margin: 0;
+}
+
+.Navbar h1,
+.Navbar p {
+  margin: 10px 0;
+}
+
+.Botão {
+  border: rgb(115, 25, 16) solid; 
+  border-radius: 10px;
+  background-color: rgb(115, 25, 16);
+  padding: 10px;
+  margin: 10px;
+}
+
+p, h1 {
+  font-family: 'minecraftia';
+  color: white;
+}
+
+.Img {
+  background-image: url('img/placeholder.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height:650px;
+  padding: 20px;
+}
+
+.Img h1 {
+  color: red;
+  margin: 0;
+}
