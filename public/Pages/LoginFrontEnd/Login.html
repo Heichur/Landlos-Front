@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>  
+        <meta charset="UTF-8">
+        <link  rel="icon" href="img/dk5uFQAAAAZJREFUAwCXloLM9AwCYwAAAABJRU5ErkJggg.png">
+        <link rel="stylesheet" href="styleLog.css">
+
+
+        <title>Login</title>
+
+    </head>
+    <body>
+
+      <img src="img/Rectangle 75.png" class="imgBack1">
+            <img src="img/Rectangle 96.png" class="imgBack2">
+
+<!-- Formulario -->
+
+<div class="login-card">
+    <div class="card-header">
+        <label class="Land">Landlos</label>
+
+        <div class="log">Bem-vindo!</div>
+
+        <label for="Log">Está é sua conta? Confirme seu email</label>
+    </div>
+
+    <form action="valores.php" method="post">
+            <div class="form-group">
+
+              <img src="img/EmptyUser.png" class="EptUser">
+              <label class="UserName">User Name</label>
+
+              <div class="input-email">
+
+                <img src="img/Email.png" alt="Email Icon" class="icon">
+                  <input name="user" id="user" type="email" placeholder="Email">
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-Senha">
+
+                <img src="img/Lock.png" alt="Lock Icon" class="icon2">
+                  <input name="Password" id="Password" type="password" placeholder="Senha">
+                    <input type="checkbox" onclick="showSenha()">
+
+              </div>
+                <a href="" class="SenhaEsquecida">Esqueci minha senha</a>
+            </div>
+
+            <div class="form-group">
+              <input value="Enviar" type="submit">
+            </div>
+
+    </form>
+
+  <!-- Scrpit JS para mostrar senha -->
+
+    <script>
+        function showSenha() {
+      var x = document.getElementById("Password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
+    
+</div>
+                
+    </body>
+</html>
